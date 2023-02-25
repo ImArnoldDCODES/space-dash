@@ -20,8 +20,8 @@ export default function Home() {
           </p>
         </div>
         <div className="basis-[50%] m-auto mt-[20rem]">
-          <div className="bg-[#979797]/50 w-[20rem] h-[20rem] text-center text-[#fff] flex m-auto rounded-[50%]">
-            <div className="bg-[#fff] w-[12rem] h-[12rem] text-center text-[#000] flex m-auto rounded-[50%]">
+          <div className="bg-[#979797]/50 w-[22rem] h-[22rem] text-center text-[#fff] flex m-auto rounded-[50%]">
+            <div className="bg-[#fff] w-[14rem] h-[14rem] text-center text-[#000] text-[30px] flex m-auto rounded-[50%]">
               <h6 className="m-auto">EXPLORE</h6>
             </div>
           </div>
