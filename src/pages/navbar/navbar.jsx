@@ -22,9 +22,8 @@ export default function Navbar() {
       <div>
         <img src={Logo} alt="logo" className="w-[3rem] h-[3rem] ml-12" />
       </div>
-      <span className="h-[2px] w-[35rem] left-[24rem] opacity-[0.25] bg-[#fff] absolute content-none z-[1]"></span>
-      <div 
-        className="w-[38rem] h-[100%]"
+      <div
+        className="w-[40rem] h-[100%] flex align-center justify-center"
         style={{
           background: "rgba(11, 13, 23, 0.5)",
           borderRadius: "16px",
@@ -33,6 +32,7 @@ export default function Navbar() {
           WebkitBackdropFilter: "blur(3.1px)",
         }}
       >
+        <span className="h-[2px] w-[35rem] right-[36rem] top-[2.7rem] opacity-[0.25] bg-[#fff] absolute content-none z-[1] m-auto"></span>
         <ul className="flex px-5 py-8 gap-10 ml-10 text-[#fff]">
           {navtext.map((list, index) => {
             return <li key={index}>{list.title}</li>;

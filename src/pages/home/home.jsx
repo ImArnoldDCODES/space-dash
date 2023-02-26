@@ -3,7 +3,7 @@ import DesktopBg from "../../assets/home/background-home-desktop.jpg";
 
 export default function Home() {
   return (
-    <div className="h-[100vh] w-[100vw] overflow-hidden home-page">
+    <div className="h-[100vh] w-[100vw] overflow-x-hidden home-page">
       <div className="flex h-[100%] m-auto mt-12">
         <div className="basis-[50%] m-auto text-start mt-[13rem] pl-[9rem]">
           <h4 className="text-[#D0D6F9] text-[28px] font-[400] leading-normal tracking-wide">
@@ -19,7 +19,7 @@ export default function Home() {
             world experience!
           </p>
         </div>
-        <div className="basis-[50%] m-auto mt-[20rem]">
+        <div className="basis-[50%] m-auto mt-[16rem]">
           <div className="bg-[#979797]/50 w-[22rem] h-[22rem] text-center text-[#fff] flex m-auto rounded-[50%]">
             <div className="bg-[#fff] w-[14rem] h-[14rem] text-center text-[#000] text-[30px] flex m-auto rounded-[50%]">
               <h6 className="m-auto">EXPLORE</h6>
