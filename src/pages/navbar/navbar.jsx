@@ -5,15 +5,19 @@ export default function Navbar() {
   const navtext = [
     {
       title: "00 HOME",
+      path: "/",
     },
     {
       title: "01 DESTINATION",
+      path: "/destination",
     },
     {
       title: "02 CREW",
+      path: "/crew",
     },
     {
       title: "03 TECHNOLOGY",
+      path: "/technology",
     },
   ];
 
@@ -35,7 +39,11 @@ export default function Navbar() {
         <span className="h-[2px] w-[35rem] right-[38rem] top-[2.7rem] opacity-[0.25] bg-[#fff] absolute content-none z-[1] m-auto"></span>
         <ul className="flex px-5 py-8 gap-10 ml-10 text-[#fff]">
           {navtext.map((list, index) => {
-            return <li key={index}>{list.title}</li>;
+            return (
+              <li key={index}>
+                <a href={list.path}>{list.title}</a>
+              </li>
+            );
           })}
         </ul>
       </div>

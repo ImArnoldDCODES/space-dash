@@ -1,5 +1,4 @@
 import React from "react";
-import DesktopBg from "../../assets/home/background-home-desktop.jpg";
 
 export default function Home() {
   return (
