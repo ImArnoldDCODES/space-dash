@@ -1,6 +1,6 @@
 // components
 import Navbar from "./pages/navbar/navbar";
-import Home from "./pages/home/home";
+import Home from "./pages/home";
 import Destination from "./pages/destination";
 import Crew from "./pages/crew";
 import Technology from "./pages/technology";
