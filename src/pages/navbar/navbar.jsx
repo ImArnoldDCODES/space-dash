@@ -32,7 +32,7 @@ export default function Navbar() {
           WebkitBackdropFilter: "blur(3.1px)",
         }}
       >
-        <span className="h-[2px] w-[35rem] right-[36rem] top-[2.7rem] opacity-[0.25] bg-[#fff] absolute content-none z-[1] m-auto"></span>
+        <span className="h-[2px] w-[35rem] right-[38rem] top-[2.7rem] opacity-[0.25] bg-[#fff] absolute content-none z-[1] m-auto"></span>
         <ul className="flex px-5 py-8 gap-10 ml-10 text-[#fff]">
           {navtext.map((list, index) => {
             return <li key={index}>{list.title}</li>;
