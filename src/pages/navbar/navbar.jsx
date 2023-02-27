@@ -22,7 +22,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="absolute flex w-[100%] justify-between items-center mt-10">
+    <div className="absolute flex w-[100%] justify-between items-center ">
       <div>
         <img src={Logo} alt="logo" className="w-[3rem] h-[3rem] ml-12" />
       </div>
@@ -34,8 +34,7 @@ export default function Navbar() {
           boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
           backdropFilter: "blur(3.1px)",
           WebkitBackdropFilter: "blur(3.1px)",
-        }}
-      >
+        }}>
         <span className="h-[2px] w-[35rem] right-[38rem] top-[2.7rem] opacity-[0.25] bg-[#fff] absolute content-none z-[1] m-auto"></span>
         <ul className="flex px-5 py-8 gap-10 ml-10 text-[#fff]">
           {navtext.map((list, index) => {
