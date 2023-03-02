@@ -44,7 +44,9 @@ export default function Navbar() {
             {navtext.map((list, index) => {
               return (
                 <li key={index}>
-                  <a href={list.path}>{list.title}</a>
+                  <a href={list.path}>
+                    <span className="font-barlow font-[700] tracking-[2.7px] leading-normal">{list.title.slice(0,2)}</span>
+                   <span className="font-barlow font-[400] tracking-[2.7px] leading-normal"> {list.title.slice(2)} </span></a>
                 </li>
               );
             })}

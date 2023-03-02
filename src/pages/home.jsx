@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -19,9 +20,11 @@ export default function Home() {
           </p>
         </div>
         <div className="basis-[50%] m-auto mt-[16rem]">
-          <div className="bg-[#979797]/50 w-[22rem] h-[22rem] text-center text-[#fff] flex m-auto rounded-[50%]">
+          <div className="bg-[#979797]/50 w-[22rem] h-[22rem] text-center text-[#fff] flex m-auto rounded-[50%] hover:w-[24rem] hover:h-[24rem]">
             <div className="bg-[#fff] w-[14rem] h-[14rem] text-center text-[#000] text-[30px] flex m-auto rounded-[50%]">
-              <h6 className="m-auto">EXPLORE</h6>
+              <h6 className="m-auto">
+                <Link to="/destination">EXPLORE</Link>
+              </h6>
             </div>
           </div>
         </div>
