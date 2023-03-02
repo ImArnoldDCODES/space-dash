@@ -63,23 +63,26 @@ const crew = () => {
 
   return (
     <>
-      <div className="crew h-[100vh]">
-        <div className="grid lg:grid-cols-2 items-center  justify-center pt-[7rem] crew">
+      <div className="crew h-[100vh] w-[100vw] overflow-x-hidden">
+        <div className="grid lg:grid-cols-2 items-center  justify-center pt-[7rem]">
           <div className="text-white m-4 text-center order-last md:order-first grid">
             <h2 className="hidden md:block text-center md:text-left text-lg m-8 lg:text-3xl lg:mb-16 lg:text-center grid order-first">
-              <span className="opacity-50">02</span> Meet your crew{" "}
+              <span className="opacity-[0.25] mr-5 font-barlow font-[700] tracking-[4px] leading-normal">
+                0{index}
+              </span>
+              <span className="text-[#fff] uppercase tracking-[4.7px] font-barlow font-thin">MEET YOUR CREW</span>
             </h2>
-            <h1 className="text-3xl opacity-50 mb-2">
-              {crewlist[index].role}{" "}
+            <h1 className="text-3xl opacity-[0.8] text-[#FFFFFF] mb-2 font-bellefair uppercase">
+              {crewlist[index].role}
             </h1>
-            <h1 className="text-4xl mb-8">{crewlist[index].name}</h1>
-            <p className="opacity-50 w-[90%] mx-auto text-xl">
+            <h1 className="text-4xl mb-8 uppercase font-bellefair leading-[54px]">{crewlist[index].name}</h1>
+            <p className="w-[90%] mx-auto text-[18px] text-[#D0D6F9] font-barlow font-[400] leading-[32px]">
               {crewlist[index].description}
             </p>
             <div className="flex justify-center py-2 cursor-pointer">
               {crewlist.map((item, index) => {
                 return (
-                  <div key={index} className="text-3xl text-gray-700">
+                  <div key={index} className="text-3xl text-white">
                     <RxDotFilled onClick={() => setIndex(index)} />
                   </div>
                 );

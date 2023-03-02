@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../../assets/shared/logo.svg";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [active, setActive] = React.useState(false);
@@ -38,16 +39,19 @@ export default function Navbar() {
           />
         </div>
         <div className="w-[40rem] h-[100%] flex align-center justify-center nav">
-          <span className="hidden lg:block h-[1px] w-[30rem] right-[38rem] top-[2.7rem] opacity-[0.25] bg-[#fff] absolute content-none z-[1] m-auto"></span>
+          <span className="hidden lg:block h-[1px] w-[20rem] right-[38rem] top-[2.7rem] opacity-[0.25] bg-[#fff] absolute content-none z-[1] m-auto"></span>
           {/* "hidden md:flex px-5 py-8 gap-10 ml-10 text-[#fff]" */}
-          <ul className="hidden md:flex px-5 py-8 gap-10 ml-10 text-[#fff]">
+          <ul className="hidden md:flex px-5 gap-10 ml-10 text-[#fff]">
             {navtext.map((list, index) => {
               return (
-                <li key={index}>
-                  <a href={list.path}>
-                    <span className="font-barlow font-[700] tracking-[2.7px] leading-normal">{list.title.slice(0,2)}</span>
-                   <span className="font-barlow font-[400] tracking-[2.7px] leading-normal"> {list.title.slice(2)} </span></a>
-                </li>
+                <NavLink key={index} to={list.path} className="py-8 px-2 flex gap-1">
+                  <span className="font-barlow font-[700] tracking-[2.7px] leading-normal">
+                    {list.title.slice(0, 2)}
+                  </span>
+                  <span className="font-barlow font-[400] tracking-[2.7px] leading-normal">
+                    {list.title.slice(2)}{" "}
+                  </span>
+                </NavLink>
               );
             })}
           </ul>

@@ -3,6 +3,7 @@ import moon from "../assets/destination/image-moon.png";
 import mars from "../assets/destination/image-mars.png";
 import europa from "../assets/destination/image-europa.png";
 import titan from "../assets/destination/image-titan.png";
+import { NavLink } from "react-router-dom";
 
 const planets = [
   {
@@ -12,7 +13,7 @@ const planets = [
       " See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
     image: moon,
     distance: "384,400 km",
-    time: "3 days",
+    time: "3 DAYS",
   },
   {
     id: 2,
@@ -21,7 +22,7 @@ const planets = [
       "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
     image: mars,
     distance: "225 MIL. km",
-    time: "9 months",
+    time: "9 MONTHS",
   },
   {
     id: 3,
@@ -30,16 +31,16 @@ const planets = [
       "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
     image: europa,
     distance: "628 MIL. km",
-    time: "3 years",
+    time: "3 YEARS",
   },
   {
     id: 4,
     name: "TITAN",
     description:
-      "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
+      "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
     image: titan,
     distance: "1.6 BIL. km",
-    time: "7 years",
+    time: "7 YEARS",
   },
 ];
 
@@ -67,19 +68,22 @@ const Destination = () => {
   React.useEffect(() => {
     const time = setTimeout(() => {
       nextSlide();
-    }, 5000);
+    }, 8000);
     return () => clearTimeout(time);
   }, [index]);
 
   const gotToSlide = (slideIndex) => {
     setIndex(slideIndex);
+    console.log(index);
   };
   return (
     <div className="h-[100vh] w-[100vw] overflow-x-hidden desitination-page">
-      <div className="grid lg:grid-cols-2 gap-8 m-auto mt-[12rem] ">
+      <div className="grid lg:grid-cols-2 gap-8 m-auto pt-[12rem] desitination-page ">
         <div className=" m-auto text-start  ">
-          <h4 className="text-2xl text-center text-[#fff] leading-normal tracking-[4px]">
-            <span className="opacity-[0.25] mr-5">01</span>
+          <h4 className="text-2xl text-center font-barlow font-thin text-[#fff] leading-[34px] tracking-[4px]">
+            <span className="opacity-[0.25] mr-5 font-barlow font-[700] tracking-[4px] leading-normal">
+              0{index}
+            </span>
             PICK YOUR DESTINATION
           </h4>
           <img
@@ -90,9 +94,9 @@ const Destination = () => {
             className="lg:ml-[8rem] w-[24rem] my-10 mx-auto"
           />
         </div>
-        <div className=" m-auto  ">
+        <div className="m-auto">
           <div className="flex flex-col w-fit m-auto">
-            <ul className="flex text-[#D0D6F9] gap-10 text-[16px] font-[400] cursor-pointer mx-auto lg:mx-0">
+            <ul className="flex text-[#D0D6F9] gap-10 text-[16px] leading-[19px] font-barlow tracking-[2px] font-[400] cursor-pointer mx-auto lg:mx-0">
               {links.map((link, index) => {
                 return (
                   <li key={link.id} onClick={() => gotToSlide(index)}>
@@ -103,27 +107,27 @@ const Destination = () => {
             </ul>
 
             <div className="text-center lg:text-left">
-              <h4 className="text-white leading-normal my-5 text-5xl md:text-6xl">
+              <h4 className="text-white font-bellefair font-[400] my-8 text-5xl md:text-6xl">
                 {planets[index].name}
               </h4>
-              <p className="text-[#D0D6F9] text-[18px] leading-normal w-[28rem]">
+              <p className="text-[#D0D6F9] font-barlow font-200 text-[18px] leading-[32px] w-[24rem]">
                 {planets[index].description}
               </p>
               <hr className="w-[100%] mt-10 border-[#383B4B]" />
               <div className="md:flex justify-center lg:justify-start gap-16 my-7">
                 <span>
-                  <h5 className="text-[14px] text-[#D0D6F9] tracking-[2.3px] leading-normal">
+                  <h5 className="text-[14px] text-[#D0D6F9] tracking-[2.3px] font-barlow font-[400] leading-normal">
                     AVG, DISTANCE
                   </h5>
-                  <h3 className="text-[#fff] mb-6 text-[28px] leading-normal">
+                  <h3 className="text-[#fff] mb-6 text-[28px] leading-normal font-bellefair font-[400]">
                     {planets[index].distance}
                   </h3>
                 </span>
                 <span>
-                  <h5 className="text-[14px] text-[#D0D6F9] tracking-[2.3px] leading-normal">
-                    AVG, Time
+                  <h5 className="text-[14px] text-[#D0D6F9] tracking-[2.3px] font-barlow font-[400] leading-normal">
+                    EST. TRAVEL TIME
                   </h5>
-                  <h3 className="text-[#fff] text-[28px] leading-normal">
+                  <h3 className="text-[#fff] text-[28px] leading-normal font-bellefair font-[400]">
                     {planets[index].time}
                   </h3>
                 </span>

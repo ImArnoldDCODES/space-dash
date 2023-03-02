@@ -14,6 +14,9 @@
 }
 .desitination-page {
   background-image: url("./assets/destination/background-destination-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
 }
@@ -26,13 +29,18 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.crew::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
 .technology {
   background-image: url("./assets/technology/background-technology-desktop.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.technology::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
 .launch {
   background-image: url("./assets/technology/image-launch-vehicle-portrait.jpg");
 }
@@ -42,4 +50,8 @@
   border-radius: 5px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(40.772px);
+}
+
+ul a.active {
+  border-bottom: 2px solid #fff;
 }
