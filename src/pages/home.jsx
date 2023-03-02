@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="h-[100vh] w-[100vw] overflow-x-hidden home-page">
       <div className="md:flex md:h-[100vh] w-[90%] gap-8 mx-auto pt-12">
-        <div className="basis-[50%] m-auto mt-[15rem] flex flex-col items-center">
+        <div className="basis-[50%] m-auto lg:mt-[15rem] mt-[8rem] flex flex-col items-center">
           <div className="text-start m-auto">
             <h4 className="text-[#D0D6F9] text-[28px] font-barlow font-[400] tracking-[4.7px] leading-[32px] tracking-wide">
               SO, YOU WANT TO TRAVEL TO
@@ -21,7 +21,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="basis-[50%] m-auto lg:mt-[12rem] mt-[8rem]">
+        <div className="basis-[50%] m-auto lg:mt-[12rem] mt-[8rem] mb-[3rem]">
           <Link to="/destination">
             <div className="bg-[#979797]/25 lg:w-[22rem] lg:h-[22rem] w-[12rem] h-[12rem] text-center text-[#fff] flex m-auto rounded-[50%] hover:w-[24rem] hover:h-[24rem]">
               <div className="bg-[#fff] lg:w-[14rem] lg:h-[14rem] w-[10rem] h-[10rem] text-center text-[#000] text-[30px] flex m-auto rounded-[50%]">
