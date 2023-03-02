@@ -96,7 +96,7 @@ const Destination = () => {
         </div>
         <div className="m-auto">
           <div className="flex flex-col w-fit m-auto">
-            <ul className="flex text-[#D0D6F9] gap-10 text-[16px] leading-[19px] font-barlow tracking-[2px] font-[400] cursor-pointer mx-auto lg:mx-0">
+            {/* <ul className="flex text-[#D0D6F9] gap-10 text-[16px] leading-[19px] font-barlow tracking-[2px] font-[400] cursor-pointer mx-auto lg:mx-0">
               {links.map((link, index) => {
                 return (
                   <li key={link.id} onClick={() => gotToSlide(index)}>
@@ -104,6 +104,48 @@ const Destination = () => {
                   </li>
                 );
               })}
+            </ul> */}
+            <ul className="flex text-[#D0D6F9] gap-10 text-[16px] leading-[19px] font-barlow tracking-[2px] font-[400] cursor-pointer mx-auto lg:mx-0">
+              <li onClick={() => gotToSlide(0)}>
+                {planets[0].name}
+                <span
+                  className={
+                    index === 0
+                      ? "hidden lg:block h-[3px] w-[2.3rem] bg-[#fff] content-none mt-2"
+                      : ""
+                  }
+                ></span>
+              </li>
+              <li onClick={() => gotToSlide(1)}>
+                {planets[1].name}
+                <span
+                  className={
+                    index === 1
+                      ? "hidden lg:block h-[3px] w-[2.3rem] bg-[#fff] content-none mt-2"
+                      : ""
+                  }
+                ></span>
+              </li>
+              <li onClick={() => gotToSlide(2)}>
+                {planets[2].name}
+                <span
+                  className={
+                    index === 2
+                      ? "hidden lg:block h-[3px] w-[2.3rem] bg-[#fff] content-none mt-2"
+                      : ""
+                  }
+                ></span>
+              </li>
+              <li onClick={() => gotToSlide(3)}>
+                {planets[3].name}
+                <span
+                  className={
+                    index === 3
+                      ? "hidden lg:block h-[3px] w-[2.3rem] bg-[#fff] content-none mt-2"
+                      : ""
+                  }
+                ></span>
+              </li>
             </ul>
 
             <div className="text-center lg:text-left">
