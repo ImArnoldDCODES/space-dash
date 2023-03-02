@@ -94,23 +94,29 @@ const technology = () => {
                 0{index}
               </span>
               <span className="text-[#fff] uppercase tracking-[4.7px] font-barlow font-thin">
-                SPACE LAUNCH 101
+                SPACE LAUNCH 10{index}
               </span>
             </h2>
-            <h1 className="text-2xl md:text-[16px] mb-2 uppercase font-bellefair leading-[54px] text-[#D0D6F9]">
+            <h1 className="text-[16px] mb-2 uppercase font-bellefair leading-[54px] text-[#D0D6F9]">
               {tech[index].role}
             </h1>
             <h1 className="text-3xl md:text-5xl mb-8 uppercase font-bellefair leading-[54px]">
               {tech[index].name}
             </h1>
-            <p className="text-[#D0D6F9] font-barlow font-thin leading-[32px] w-3/4 mx-auto">
+            <p className="text-[#D0D6F9] font-barlow font-thin leading-[32px] lg:w-3/4 w-[100%] mx-auto">
               {tech[index].description}
             </p>
           </div>
         </div>
         <div className="order-first lg:order-last">
-          <h2 className="block lg:hidden text-center md:text-left text-lg m-8 lg:text-3xl text-white m-x-4 lg:mb-20 lg:text-center">
-            <span className="opacity-50">02</span> SPACE LAUNCH 101{" "}
+          <h2 className="block lg:hidden text-
+          left md:text-left text-lg m-8 lg:text-3xl text-white m-x-4 lg:mb-20 lg:text-center mr-auto w-fit">
+            <span className="opacity-[0.25] mr-5 font-barlow font-[700] tracking-[4px] leading-normal">
+              0{index}
+            </span>
+            <span className="text-[#fff] uppercase tracking-[4.7px] font-barlow font-thin">
+              SPACE LAUNCH 10{index}
+            </span>
           </h2>
           <img
             src={tech[index].image[0].image1}

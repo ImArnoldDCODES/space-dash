@@ -91,7 +91,7 @@ const Destination = () => {
             alt=""
             width={100}
             height={100}
-            className="lg:ml-[8rem] w-[24rem] my-10 mx-auto"
+            className="lg:ml-[8rem] lg:w-[24rem] sm:w-[20rem] w-[16rem] my-10 mx-auto"
           />
         </div>
         <div className="m-auto">
@@ -152,7 +152,7 @@ const Destination = () => {
               <h4 className="text-white font-bellefair font-[400] my-8 text-5xl md:text-6xl">
                 {planets[index].name}
               </h4>
-              <p className="text-[#D0D6F9] font-barlow font-200 text-[18px] leading-[32px] w-[24rem]">
+              <p className="text-[#D0D6F9] font-barlow font-200 text-[18px] leading-[32px] md:w-[24rem] w-[21rem]">
                 {planets[index].description}
               </p>
               <hr className="w-[100%] mt-10 border-[#383B4B]" />

@@ -13,7 +13,7 @@ export default function Home() {
             <h2 className="text-[#fff] md:text-[150px] text-[100px] font-[400] leading-[172px] font-bellefair">
               SPACE
             </h2>
-            <p className="md:w-[28rem] w-[100%] text-[#D0D6F9] md:text-[18px] text-[15px] font-barlow font-normal leading-normal">
+            <p className="md:w-[28rem] w-[80%] text-[#D0D6F9] md:text-[18px] text-[15px] font-barlow font-normal leading-normal">
               Let’s face it; if you want to go to space, you might as well
               genuinely go to outer space and not hover kind of on the edge of
               it. Well sit back, and relax because we’ll give you a truly out of
@@ -21,7 +21,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="basis-[50%] m-auto lg:mt-[12rem] mt-[18rem]">
+        <div className="basis-[50%] m-auto lg:mt-[12rem] mt-[8rem]">
           <Link to="/destination">
             <div className="bg-[#979797]/25 lg:w-[22rem] lg:h-[22rem] w-[12rem] h-[12rem] text-center text-[#fff] flex m-auto rounded-[50%] hover:w-[24rem] hover:h-[24rem]">
               <div className="bg-[#fff] lg:w-[14rem] lg:h-[14rem] w-[10rem] h-[10rem] text-center text-[#000] text-[30px] flex m-auto rounded-[50%]">
