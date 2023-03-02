@@ -79,7 +79,7 @@ const crew = () => {
             <div className="flex justify-center py-2 cursor-pointer">
               {crewlist.map((item, index) => {
                 return (
-                  <div key={index} className="text-3xl text-gray-700">
+                  <div key={index} className="text-3xl text-white">
                     <RxDotFilled onClick={() => setIndex(index)} />
                   </div>
                 );

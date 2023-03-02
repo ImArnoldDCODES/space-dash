@@ -43,3 +43,7 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(40.772px);
 }
+
+ul a.active {
+  border-bottom: 2px solid #fff;
+}

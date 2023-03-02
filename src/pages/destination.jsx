@@ -3,6 +3,7 @@ import moon from "../assets/destination/image-moon.png";
 import mars from "../assets/destination/image-mars.png";
 import europa from "../assets/destination/image-europa.png";
 import titan from "../assets/destination/image-titan.png";
+import { NavLink } from "react-router-dom";
 
 const planets = [
   {
@@ -36,7 +37,7 @@ const planets = [
     id: 4,
     name: "TITAN",
     description:
-      "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
+      "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
     image: titan,
     distance: "1.6 BIL. km",
     time: "7 years",
@@ -75,8 +76,8 @@ const Destination = () => {
     setIndex(slideIndex);
   };
   return (
-    <div className="h-[100vh] w-[100vw] overflow-x-hidden desitination-page">
-      <div className="grid lg:grid-cols-2 gap-8 m-auto mt-[12rem] ">
+    <div className="h-[100vh]   ">
+      <div className="grid lg:grid-cols-2 gap-8 m-auto pt-[12rem] desitination-page ">
         <div className=" m-auto text-start  ">
           <h4 className="text-2xl text-center text-[#fff] leading-normal tracking-[4px]">
             <span className="opacity-[0.25] mr-5">01</span>
