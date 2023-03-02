@@ -31,6 +31,7 @@ export default function Navbar() {
   return (
     <>
       <div className="absolute flex w-[100%] justify-between items-center mt-5">
+        <NavLink to='/'>
         <div>
           <img
             src={Logo}
@@ -38,6 +39,7 @@ export default function Navbar() {
             className="absolue top-[2rem] mt-2 z-[1] md:static w-[3rem] h-[3rem] ml-12"
           />
         </div>
+        </NavLink>
         <div className="w-[40rem] h-[100%] flex align-center justify-center nav">
           <span className="hidden lg:block h-[1px] w-[20rem] right-[38rem] top-[2.7rem] opacity-[0.25] bg-[#fff] absolute content-none z-[1] m-auto"></span>
           {/* "hidden md:flex px-5 py-8 gap-10 ml-10 text-[#fff]" */}
