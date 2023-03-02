@@ -43,14 +43,13 @@ export default function Navbar() {
         <div className="w-[40rem] h-[100%] flex align-center justify-center nav">
           <span className="hidden lg:block h-[1px] w-[20rem] right-[38rem] top-[2.7rem] opacity-[0.25] bg-[#fff] absolute content-none z-[1] m-auto"></span>
           {/* "hidden md:flex px-5 py-8 gap-10 ml-10 text-[#fff]" */}
-          <ul className="hidden md:flex px-5 gap-10 ml-10 text-[#fff]">
+          <ul className="hidden md:flex px-5 gap-10 pl-10 text-[#fff]">
             {navtext.map((list, index) => {
               return (
                 <NavLink
                   key={index}
                   to={list.path}
-                  className="py-8 px-2 flex gap-1"
-                >
+                  className="py-8 px-2 flex gap-1">
                   <span className="lg:block hidden font-barlow font-[700] tracking-[2.7px] leading-normal">
                     {list.title.slice(0, 2)}
                   </span>
@@ -69,17 +68,15 @@ export default function Navbar() {
         }
         style={{
           backgroundColor: "#9c9b9e",
-        }}
-      >
-        <ul className="lg:hidden md:flex px-5 gap-10 ml-10 text-[#fff] pt-32">
+        }}>
+        <ul className="lg:hidden md:flex px-5 gap-10 pl-10 bg-[#9c9797] text-[#fff] pt-32">
           {navtext.map((list, index) => {
             return (
               <NavLink
                 key={index}
                 to={list.path}
                 className="py-8 px-2 flex gap-1"
-                onClick={() => setActive(true)}
-              >
+                onClick={() => setActive(true)}>
                 <span className="font-barlow font-[700] tracking-[2.7px] leading-normal">
                   {list.title.slice(0, 2)}
                 </span>
@@ -102,7 +99,7 @@ export default function Navbar() {
         {!active && (
           <FaTimes
             className={`${
-              !active ? "block md:hidden text-4xl text-white" : ""
+              !active ? "block md:hidden  text-4xl text-white" : ""
             } `}
           />
         )}

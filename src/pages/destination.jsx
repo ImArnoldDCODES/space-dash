@@ -77,7 +77,7 @@ const Destination = () => {
     console.log(index);
   };
   return (
-    <div className="h-[100vh] w-[100vw] overflow-x-hidden desitination-page">
+    <div className="h-[100vh] ">
       <div className="grid lg:grid-cols-2 gap-8 m-auto pt-[12rem] desitination-page ">
         <div className=" m-auto text-start  ">
           <h4 className="text-2xl text-center font-barlow font-thin text-[#fff] leading-[34px] tracking-[4px]">
@@ -111,40 +111,36 @@ const Destination = () => {
                 <span
                   className={
                     index === 0
-                      ? "hidden lg:block h-[3px] w-[2.3rem] bg-[#fff] content-none mt-2"
+                      ? " block h-[3px] w-full bg-[#fff] content-none mt-2"
                       : ""
-                  }
-                ></span>
+                  }></span>
               </li>
               <li onClick={() => gotToSlide(1)}>
                 {planets[1].name}
                 <span
                   className={
                     index === 1
-                      ? "hidden lg:block h-[3px] w-[2.3rem] bg-[#fff] content-none mt-2"
+                      ? "block h-[3px] w-full bg-[#fff] content-none mt-2"
                       : ""
-                  }
-                ></span>
+                  }></span>
               </li>
               <li onClick={() => gotToSlide(2)}>
                 {planets[2].name}
                 <span
                   className={
                     index === 2
-                      ? "hidden lg:block h-[3px] w-[2.3rem] bg-[#fff] content-none mt-2"
+                      ? "block h-[3px] w-full bg-[#fff] content-none mt-2"
                       : ""
-                  }
-                ></span>
+                  }></span>
               </li>
               <li onClick={() => gotToSlide(3)}>
                 {planets[3].name}
                 <span
                   className={
                     index === 3
-                      ? "hidden lg:block h-[3px] w-[2.3rem] bg-[#fff] content-none mt-2"
+                      ? "block h-[3px] w-full bg-[#fff] content-none mt-2"
                       : ""
-                  }
-                ></span>
+                  }></span>
               </li>
             </ul>
 

@@ -54,4 +54,5 @@
 
 ul a.active {
   border-bottom: 2px solid #fff;
+  width:fit-content
 }

@@ -76,8 +76,8 @@ const technology = () => {
   let toggle = active ? "text-red-500" : null;
 
   return (
-    <div className=" h-[100vh] technology h-[100vh] w-[100vw] overflow-x-hidden">
-      <div className="grid lg:grid-cols-2 gap-10 items-center  justify-center pt-[9rem]">
+    <div className=" h-[100vh]">
+      <div className="grid lg:grid-cols-2 gap-10 items-center  justify-center pt-[9rem] technology">
         <div className="lg:flex gap-5 mx-6">
           <div className="flex lg:flex-col justify-center py-2 cursor-pointer">
             {tech.map((item, index) => {
@@ -90,33 +90,20 @@ const technology = () => {
           </div>
           <div className="text-white my-6 text-center">
             <h2 className="hidden lg:block text-left text-lg m-8 lg:text-3xl lg:mb-20 lg:text-center">
-              <span className="opacity-[0.25] mr-5 font-barlow font-[700] tracking-[4px] leading-normal">
-                0{index}
-              </span>
-              <span className="text-[#fff] uppercase tracking-[4.7px] font-barlow font-thin">
-                SPACE LAUNCH 10{index}
-              </span>
+              <span className="opacity-50">02</span> SPACE LAUNCH 101{" "}
             </h2>
-            <h1 className="text-[16px] mb-2 uppercase font-bellefair leading-[54px] text-[#D0D6F9]">
+            <h1 className="text-2xl md:text-4xl opacity-50 mb-2">
               {tech[index].role}
             </h1>
-            <h1 className="text-3xl md:text-5xl mb-8 uppercase font-bellefair leading-[54px]">
-              {tech[index].name}
-            </h1>
-            <p className="text-[#D0D6F9] font-barlow font-thin leading-[32px] lg:w-3/4 w-[100%] mx-auto">
+            <h1 className="text-3xl md:text-5xl mb-8">{tech[index].name}</h1>
+            <p className="opacity-50 w-3/4 mx-auto">
               {tech[index].description}
             </p>
           </div>
         </div>
         <div className="order-first lg:order-last">
-          <h2 className="block lg:hidden text-
-          left md:text-left text-lg m-8 lg:text-3xl text-white m-x-4 lg:mb-20 lg:text-center mr-auto w-fit">
-            <span className="opacity-[0.25] mr-5 font-barlow font-[700] tracking-[4px] leading-normal">
-              0{index}
-            </span>
-            <span className="text-[#fff] uppercase tracking-[4.7px] font-barlow font-thin">
-              SPACE LAUNCH 10{index}
-            </span>
+          <h2 className="block lg:hidden text-center md:text-left text-lg m-8 lg:text-3xl text-white m-x-4 lg:mb-20 lg:text-center">
+            <span className="opacity-50">02</span> SPACE LAUNCH 101{" "}
           </h2>
           <img
             src={tech[index].image[0].image1}
