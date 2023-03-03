@@ -25,9 +25,11 @@ export default function Navbar() {
   ];
 
   const handleNav = () => {
-    console.log("clicked");
-    setActive(!active);
+    setActive(!active); 
+    console.log(active, "active2");
   };
+  console.log(active);
+
   return (
     <>
       <div className="absolute flex w-[100%] justify-between items-center mt-5">
@@ -65,7 +67,7 @@ export default function Navbar() {
       </div>
       <div
         className={
-          !active ? "block lg:hidden h-[65vh] w-[100vw] fixed" : "hidden"
+          active === true ? "block lg:hidden h-[65vh] w-[100vw] fixed" : "hidden"
         }
         style={{
           backgroundColor: "#9c9b9e",
@@ -93,14 +95,14 @@ export default function Navbar() {
       </div>
       <div className="absolute right-[2rem] top-[2rem]" onClick={handleNav}>
         {active && (
-          <FaBars
+          <FaTimes
             className={`${
               active ? "block md:hidden text-4xl text-white" : ""
             } `}
           />
         )}
         {!active && (
-          <FaTimes
+          <FaBars
             className={`${
               !active ? "block md:hidden text-4xl text-white" : ""
             } `}

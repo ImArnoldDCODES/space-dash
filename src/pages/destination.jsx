@@ -111,7 +111,7 @@ const Destination = () => {
                 <span
                   className={
                     index === 0
-                      ? "hidden lg:block h-[3px] w-[2.3rem] bg-[#fff] content-none mt-2"
+                      ? "block h-[3px] bg-[#fff] content-none mt-2"
                       : ""
                   }
                 ></span>
@@ -121,7 +121,7 @@ const Destination = () => {
                 <span
                   className={
                     index === 1
-                      ? "hidden lg:block h-[3px] w-[2.3rem] bg-[#fff] content-none mt-2"
+                      ? "block h-[3px] bg-[#fff] content-none mt-2"
                       : ""
                   }
                 ></span>
@@ -131,7 +131,7 @@ const Destination = () => {
                 <span
                   className={
                     index === 2
-                      ? "hidden lg:block h-[3px] w-[2.3rem] bg-[#fff] content-none mt-2"
+                      ? "block h-[3px] bg-[#fff] content-none mt-2"
                       : ""
                   }
                 ></span>
@@ -141,7 +141,7 @@ const Destination = () => {
                 <span
                   className={
                     index === 3
-                      ? "hidden lg:block h-[3px] w-[2.3rem] bg-[#fff] content-none mt-2"
+                      ? "block h-[3px] bg-[#fff] content-none mt-2"
                       : ""
                   }
                 ></span>
