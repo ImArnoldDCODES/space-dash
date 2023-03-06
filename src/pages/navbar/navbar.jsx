@@ -80,7 +80,7 @@ export default function Navbar() {
                 key={index}
                 to={list.path}
                 className="py-8 px-2 flex gap-1"
-                onClick={() => setActive(true)}
+                onClick={() => setActive(false)}
               >
                 <span className="font-barlow font-[700] tracking-[2.7px] leading-normal">
                   {list.title.slice(0, 2)}
